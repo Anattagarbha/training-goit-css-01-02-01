@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+      :root {
+        --brand-color: #3f51b5;
+      }
+      section {
+        border: 3px solid var(--brand-color);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        Создадим переменную --brand-color для хранения цвета бренда (#3f51b5) и
+        будем её использовать.
+      </p>
+      <p>
+        Глобальные переменные, доступные в любом другом правиле, определяются в
+        селекторе :root - более специфичном селекторе элемента &lt;html&gt;.
+        Объявление переменной начинается с двойного дефиса --, за которым
+        следует её имя в произвольной нотации.
+      </p>
+    </section>
+  </body>
+</html>

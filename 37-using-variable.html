@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using variable</title>
+    <style>
+      :root {
+        --brand-color: #3f51b5;
+      }
+      section {
+        border: 3px solid var(--brand-color);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        Для получения доступа к значению переменной применяется встроенная
+        <b>функция var()</b>, которой первым аргументом передаётся имя
+        переменной.
+      </p>
+    </section>
+  </body>
+</html>
