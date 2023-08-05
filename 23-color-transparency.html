@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color transparency</title>
+    <style>
+      .text {
+        color: rgba(255, 150, 67, 0.5);
+      }
+      .new-text {
+        color: rgba(100%, 0%, 0%, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Основной способ добавления прозрачности цвета это <b>функция rgba()</b>. В
+      отличии от rgb() ещё добавляется прозрачность (альфа канал).
+    </p>
+    <p class="text">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati,
+      doloremque!
+    </p>
+    <p class="new-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+      aut.
+    </p>
+  </body>
+</html>

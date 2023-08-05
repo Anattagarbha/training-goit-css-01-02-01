@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child selector</title>
+  </head>
+  <style>
+    ul {
+      list-style: none;
+    }
+    .menu > li {
+      border: 1px solid tomato;
+    }
+  </style>
+  <body>
+    <p>
+      <b>Селектор ребёнка</b> - ещё один распространённый селектор, который
+      позволяет выбрать только непосредственного ребёнка внутри родительского
+      элемента.
+    </p>
+    <ul class="menu">
+      <li>
+        Комьютеры и комплектующие
+        <ul class="submenu">
+          <li>Процессоры</li>
+          <li>Мониторы</li>
+          <li>Видеокарты</li>
+        </ul>
+      </li>
+      <li>
+        Бытовая техника
+        <ul class="submenu">
+          <li>Холодильники</li>
+          <li>Телевизоры</li>
+          <li>Стиральные машины</li>
+        </ul>
+      </li>
+      <li>
+        Товары для дома
+        <ul class="submenu">
+          <li>Кресла</li>
+          <li>Матрасы</li>
+          <li>Электрокамины</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

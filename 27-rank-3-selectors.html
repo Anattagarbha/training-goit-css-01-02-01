@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rank 3 selectors</title>
+    <style>
+      /* специфичность 0010 */
+      .post-title {
+        color: green;
+      }
+      /* специфичность 0011 */
+      .post > h1 {
+        color: red;
+      }
+      /* специфичность 0020 */
+      .post > .post-title {
+        color: orange;
+      }
+      /* специфичность 0001 */
+      a {
+        color: green;
+      }
+      /* специфичность 0010 */
+      .post-link {
+        color: orange;
+      }
+      /* специфичность 0011 */
+      a.post-link {
+        color: blue;
+      }
+      /* специфичность 0020 */
+      .post > .post-link {
+        color: red;
+      }
+      /* специфичность 0021 */
+      .post > a.post-link {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Каждый селектор класса, атрибута и псевдокласса добавляет единицу в третий
+      ранг.
+    </p>
+    <article class="post">
+      <h1 class="post-title">Lorem ipsum dolor sit amet</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        commodi, veritatis nihil alias iste odit similique sit eius optio
+        veniam, impedit cumque fuga facere labore quo id necessitatibus quaerat
+        rerum.
+      </p>
+      <a href="" class="post-link">Читать дальше...</a>
+    </article>
+    <img src="./img/specificity.png" alt="ранги специфичности" width="700" />
+  </body>
+</html>

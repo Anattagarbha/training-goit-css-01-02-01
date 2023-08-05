@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Same specificity</title>
+    <style>
+      a {
+        color: teal;
+      }
+      a {
+        color: brown;
+      }
+      a {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Если специфичность одинаковая, побеждает правило,
+      <b>расположенное ниже в коде</b>.
+    </p>
+    <a href="http://google.com">Google</a>
+  </body>
+</html>

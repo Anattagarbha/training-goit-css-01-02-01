@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+      :root {
+        --brand-color: #3f51b5;
+      }
+      section {
+        border: 3px solid var(--brand-color);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        Пользовательские свойства (CSS Custom Properties), также известные как
+        <b>CSS-переменные</b> - это контейнеры для значений, определённые в
+        CSS-документе с целью повторного использования.
+      </p>
+      <p>
+        Имя переменной чувствительно к регистру и может содержать латинские
+        буквы, цифры, подчеркивания и тире. Создадим переменную --brand-color
+        для хранения цвета бренда (#3f51b5) и будем её использовать.
+      </p>
+    </section>
+  </body>
+</html>
